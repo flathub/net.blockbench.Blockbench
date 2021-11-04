@@ -34,7 +34,8 @@
         </screenshot>
     </screenshots>
     <releases>
+        <release version="4.0.3" date="2021-10-27"/>
         <release version="4.0.1" date="2021-10-15"/>
     </releases>
-    <content_rating type="oars-1.1" />
+    <content_rating type="oars-1.1"/>
 </component>
