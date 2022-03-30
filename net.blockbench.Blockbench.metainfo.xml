@@ -30,10 +30,11 @@
     </description>
     <screenshots>
         <screenshot type="default">
-            <image>https://www.blockbench.net/_nuxt/img/front_page_app.b482178.png</image>
+            <image>https://raw.githubusercontent.com/JannisX11/blockbench/master/content/front_page_app.png</image>
         </screenshot>
     </screenshots>
     <releases>
+        <release version="4.2.0" date="2022-03-29"/>
         <release version="4.1.5" date="2022-02-12"/>
         <release version="4.1.4" date="2022-02-01"/>
         <release version="4.1.2" date="2022-01-14"/>
