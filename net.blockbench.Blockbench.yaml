@@ -54,8 +54,8 @@ modules:
         path: net.blockbench.Blockbench.png
       - type: file
         dest-filename: blockbench.AppImage
-        url: https://github.com/JannisX11/blockbench/releases/download/v4.3.0/Blockbench_4.3.0.AppImage
-        sha256: 572297735d53c30459188c1fa346c8bcec49799dc6cfc7b619fa11d72cc88809
+        url: https://github.com/JannisX11/blockbench/releases/download/v4.3.1/Blockbench_4.3.1.AppImage
+        sha256: 9a8b26d00713f1e709a760af6533ecf4c4eefdf7276d06658f13163d07d2ba41
         x-checker-data:
           type: json
           url: https://api.github.com/repos/JannisX11/blockbench/releases/latest
