@@ -22,7 +22,6 @@ finish-args:
   - --filesystem=xdg-videos
 
   - --talk-name=org.freedesktop.ScreenSaver
-  - --talk-name=org.freedesktop.portal.Fcitx
   - --talk-name=org.freedesktop.Notifications
 
 modules:
