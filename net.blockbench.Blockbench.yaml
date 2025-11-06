@@ -13,7 +13,6 @@ finish-args:
   - --socket=pulseaudio
   - --socket=wayland
   - --socket=fallback-x11
-  - --socket=system-bus
 
   - --filesystem=xdg-desktop
   - --filesystem=xdg-documents
