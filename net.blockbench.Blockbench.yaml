@@ -1,8 +1,8 @@
 app-id: net.blockbench.Blockbench
 base: org.electronjs.Electron2.BaseApp
-base-version: '24.08'
+base-version: "25.08"
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: "25.08"
 sdk: org.freedesktop.Sdk
 command: blockbench-run
 separate-locales: false
@@ -33,7 +33,7 @@ modules:
       - ./blockbench.AppImage --appimage-extract
       - rm blockbench.AppImage
 
-      - cp squashfs-root/blockbench.desktop net.blockbench.Blockbench.desktop
+      - cp squashfs-root/Blockbench.desktop net.blockbench.Blockbench.desktop
       - desktop-file-edit --set-icon net.blockbench.Blockbench --set-key Exec --set-value
         'blockbench-run %u' net.blockbench.Blockbench.desktop
 
@@ -42,23 +42,24 @@ modules:
       - install -Dm644 net.blockbench.Blockbench.desktop -t /app/share/applications
       - install -Dm644 net.blockbench.Blockbench.png -t /app/share/icons/hicolor/512x512/apps
 
-      - mv squashfs-root /app/bin/blockbench
+      - mv squashfs-root /app/bin/Blockbench
     sources:
       - type: script
         dest-filename: blockbench-run
         commands:
-          - zypak-wrapper /app/bin/blockbench/blockbench "$@"
+          - zypak-wrapper /app/bin/Blockbench/Blockbench "$@"
       - type: file
         path: net.blockbench.Blockbench.metainfo.xml
       - type: file
         path: net.blockbench.Blockbench.png
       - type: file
         dest-filename: blockbench.AppImage
-        url: https://github.com/JannisX11/blockbench/releases/download/v5.0.4/Blockbench_5.0.4.AppImage
-        sha256: 0d747684a9729f91fb8b680c8d7ebce77d577d8743a483cda9b3fe638b6935f4
+        url: https://github.com/JannisX11/blockbench/releases/download/v5.0.7/Blockbench_5.0.7.AppImage
+        sha256: e9f1b74ed61eaf4843b5dff017395e98394be29849229bebd856ee0463dca451
         x-checker-data:
           type: json
           url: https://api.github.com/repos/JannisX11/blockbench/releases/latest
           version-query: .tag_name | sub("^v"; "")
-          url-query: .assets[] | select(.name|match("Blockbench_.*\\.AppImage")) |
+          url-query:
+            .assets[] | select(.name|match("Blockbench_.*\\.AppImage")) |
             .browser_download_url
