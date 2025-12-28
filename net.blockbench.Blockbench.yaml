@@ -60,6 +60,5 @@ modules:
           type: json
           url: https://api.github.com/repos/JannisX11/blockbench/releases/latest
           version-query: .tag_name | sub("^v"; "")
-          url-query:
-            .assets[] | select(.name|match("Blockbench_.*\\.AppImage")) |
+          url-query: .assets[] | select(.name|match("Blockbench_.*\\.AppImage")) |
             .browser_download_url
