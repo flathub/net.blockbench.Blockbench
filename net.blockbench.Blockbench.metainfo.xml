@@ -32,6 +32,7 @@
         <screenshot type="default">
             <image
             >https://raw.githubusercontent.com/JannisX11/blockbench/master/content/front_page_app.png</image>
+            <caption>Blockbench's user interface</caption>
         </screenshot>
     </screenshots>
     <releases>
