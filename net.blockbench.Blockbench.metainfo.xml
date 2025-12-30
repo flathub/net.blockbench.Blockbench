@@ -14,6 +14,7 @@
     <url type="homepage">https://www.blockbench.net</url>
     <url type="help">https://www.blockbench.net/wiki</url>
     <url type="bugtracker">https://github.com/JannisX11/blockbench/issues</url>
+    <url type="vcs-browser">https://github.com/JannisX11/blockbench</url>
     <description>
         <p>
             Blockbench is a free, modern model editor for low-poly and boxy
