@@ -6,7 +6,7 @@
     <summary>Blockbench - A boxy 3D model editor</summary>
     <metadata_license>CC0-1.0</metadata_license>
     <project_license>GPL-3.0</project_license>
-    <developer id="net.blockbench>
+    <developer id="net.blockbench">
         <name>JannisX11</name>
     </developer>
     <categories>
