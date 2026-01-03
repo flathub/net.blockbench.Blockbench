@@ -11,7 +11,6 @@ finish-args:
   - --share=ipc
   - --share=network
   - --socket=pulseaudio
-  - --socket=wayland
   - --socket=x11
   - --filesystem=xdg-desktop
   - --filesystem=xdg-documents
