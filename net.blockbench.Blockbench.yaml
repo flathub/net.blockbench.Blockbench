@@ -1,8 +1,8 @@
 app-id: net.blockbench.Blockbench
 base: org.electronjs.Electron2.BaseApp
-base-version: "25.08"
+base-version: '25.08'
 runtime: org.freedesktop.Platform
-runtime-version: "25.08"
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 command: blockbench-run
 separate-locales: false
@@ -52,8 +52,8 @@ modules:
         path: net.blockbench.Blockbench.png
       - type: file
         dest-filename: blockbench.AppImage
-        url: https://github.com/JannisX11/blockbench/releases/download/v5.0.7/Blockbench_5.0.7.AppImage
-        sha256: e9f1b74ed61eaf4843b5dff017395e98394be29849229bebd856ee0463dca451
+        url: https://github.com/JannisX11/blockbench/releases/download/v5.1.0/Blockbench_5.1.0.AppImage
+        sha256: b3be8d942345aaa44474d15d85f1b6547f2276b06bce4fbbf72ef50265f63a62
         x-checker-data:
           type: json
           url: https://api.github.com/repos/JannisX11/blockbench/releases/latest
