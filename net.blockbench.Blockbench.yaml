@@ -32,7 +32,7 @@ modules:
       - ./blockbench.AppImage --appimage-extract
       - rm blockbench.AppImage
 
-      - cp squashfs-root/Blockbench.desktop net.blockbench.Blockbench.desktop
+      - cp squashfs-root/blockbench.desktop net.blockbench.Blockbench.desktop
       - desktop-file-edit --set-icon net.blockbench.Blockbench --set-key Exec --set-value
         'blockbench-run %u' net.blockbench.Blockbench.desktop
 
