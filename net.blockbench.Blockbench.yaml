@@ -46,7 +46,7 @@ modules:
       - type: script
         dest-filename: blockbench-run
         commands:
-          - zypak-wrapper /app/bin/Blockbench/Blockbench "$@"
+          - zypak-wrapper /app/bin/Blockbench/blockbench "$@"
       - type: file
         path: net.blockbench.Blockbench.metainfo.xml
       - type: file
