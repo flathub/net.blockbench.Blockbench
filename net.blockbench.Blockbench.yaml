@@ -32,7 +32,7 @@ modules:
       - ./blockbench.AppImage --appimage-extract
       - rm blockbench.AppImage
 
-      - cp squashfs-root/blockbench.desktop net.blockbench.Blockbench.desktop
+      - cp squashfs-root/net.blockbench.blockbench.desktop net.blockbench.Blockbench.desktop
       - desktop-file-edit --set-icon net.blockbench.Blockbench --set-key Exec --set-value
         'blockbench-run %u' net.blockbench.Blockbench.desktop
 
@@ -53,8 +53,8 @@ modules:
         path: net.blockbench.Blockbench.png
       - type: file
         dest-filename: blockbench.AppImage
-        url: https://github.com/JannisX11/blockbench/releases/download/v5.1.6/Blockbench_5.1.6.AppImage
-        sha256: c6dd92036f3c10495df53911a74e5b00a1d557ea13e506084177ef55a5cd7c0e
+        url: https://github.com/JannisX11/blockbench/releases/download/v5.2.0/Blockbench_5.2.0.AppImage
+        sha256: 75bd8c16b1caf520f5b14847e9e6c2644642abdd68bba631b35a150d2e0f08c4
         x-checker-data:
           type: json
           url: https://api.github.com/repos/JannisX11/blockbench/releases/latest
